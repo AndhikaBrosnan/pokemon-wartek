@@ -3,8 +3,14 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 const PokemonDetail = ({ chosenPokemon }) => {
+  console.log("chosen Pokemon: ", chosenPokemon);
   return (
     <div className="ui container" style={{ paddingTop: "4%" }}>
+      <div class="ui grid">
+        <div class="six wide column"></div>
+        <div class="ten wide column"></div>
+      </div>
+
       <Link to="/">
         <img
           alt=""
@@ -12,20 +18,31 @@ const PokemonDetail = ({ chosenPokemon }) => {
           style={{ height: "8vh" }}
         />
       </Link>
+      <div className="ui container">
+        <img
+          alt=""
+          style={{ height: "25vh", marginBottom: "-3%" }}
+          src={
+            chosenPokemon["sprites"] !== undefined
+              ? chosenPokemon["sprites"]["front_default"]
+              : 0
+          }
+        />
+      </div>
+
       <h1>Pokemon Name: {chosenPokemon.name}</h1>
       <h2>Base Experience:{chosenPokemon.base_experience} </h2>
       <h3>
         Types 1:
         {chosenPokemon["stats"] !== undefined
           ? chosenPokemon["types"][0]["type"]["name"]
-          : 0}
+          : "none"}
         <div></div>
         Types 2:
         {chosenPokemon["stats"] !== undefined && chosenPokemon["types"][1]
           ? chosenPokemon["types"][1]["type"]["name"]
           : "none"}
       </h3>
-
       <h3>Stats: </h3>
       <div className="ui grid">
         <div className="two wide column">
