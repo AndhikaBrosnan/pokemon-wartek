@@ -4,6 +4,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { fetchPokemonData } from "../../redux/action/pokemon";
 
 const PokemonList = () => {
+  //get the data from reducer (similar to mapStateToProps)
   const pokemons = useSelector((state) => state.pokemon);
   const dispatch = useDispatch();
 
