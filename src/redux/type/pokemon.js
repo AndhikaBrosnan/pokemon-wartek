@@ -1,1 +1,2 @@
 export const FETCH_POKEMON = "FETCH_POKEMON";
+export const CHOSEN_POKEMON = "CHOSEN_POKEMON";
