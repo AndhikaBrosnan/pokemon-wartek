@@ -1,10 +1,11 @@
 # Wartek Frontend Engineering: Technical Assessment Project
 
-## Reactjs list and details of Pokemon Project for Warung Teknologi Technical Test
+### Pokedex to see lists of Pokemon and the details of selected Pokemon. Project made as a Frontend Engineer: Technical Assessment Project. Deployed on Netlify: https://pokemon-wartek.netlify.app/
+## 
 
 ### How to install
 
-- git clone this repo (https://github.com/AndhikaBrosnan/pokemon-wartek.git)
+- git clone [this repo](https://github.com/AndhikaBrosnan/pokemon-wartek.git)
 - npm install
 - npm start
 
@@ -15,4 +16,4 @@
 
 ### Collaborator
 
-- https://www.linkedin.com/in/andhika-brosnan/
+- [Andhika Brosnan](https://www.linkedin.com/in/andhika-brosnan/)
