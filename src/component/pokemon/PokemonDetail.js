@@ -9,4 +9,4 @@ const PokemonDetail = () => {
   );
 };
 
-export default PokemonDetail;
+export default connect()(PokemonDetail);

@@ -5,7 +5,8 @@ const INITIAL_STATE = [];
 const pokemonReducer = (pokemon = INITIAL_STATE, action) => {
   switch (action.type) {
     case FETCH_POKEMON:
-      return pokemon.concat(action.payload);
+      console.log("reducer called: ", action.payload.results);
+      return pokemon.concat(action.payload.results);
     default:
       return pokemon;
   }
