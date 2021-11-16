@@ -1,11 +1,13 @@
 import { FETCH_POKEMON } from "../type/pokemon";
 
-const INITIAL_STATE = [];
+// initial state
+const INIT_POKES = [];
 
-const pokemonReducer = (pokemon = INITIAL_STATE, action) => {
+const pokemonReducer = (pokemon = INIT_POKES, action) => {
   switch (action.type) {
     case FETCH_POKEMON:
-      console.log("reducer called: ", action.payload.results);
+      //reset the pokemon state to init (no addition & need to reset data on landing)
+      pokemon = INIT_POKES;
       return pokemon.concat(action.payload.results);
     default:
       return pokemon;
