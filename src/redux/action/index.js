@@ -2,7 +2,7 @@ import pokeApi from "../../api/pokeApi";
 
 export const fetchPokemon = async () => {
   try {
-    const response = await pokeApi.get("pokemon?limit=52");
+    const response = await pokeApi.get("pokemon?limit=120");
     return response.data;
   } catch (err) {
     return {

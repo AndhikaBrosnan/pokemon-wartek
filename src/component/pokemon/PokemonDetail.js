@@ -3,7 +3,6 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 
 const PokemonDetail = ({ chosenPokemon }) => {
-  console.log("chosen Pokemon: ", chosenPokemon);
   return (
     <div className="ui container" style={{ paddingTop: "4%" }}>
       <Link to="/">
