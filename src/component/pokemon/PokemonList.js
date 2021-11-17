@@ -24,6 +24,7 @@ const PokemonList = () => {
         style={{ height: "8vh" }}
       />
       <h1>My Pokédex</h1>
+      <h5 className="ui red header">* choose Pokemon Name to see details..</h5>
       <div className="ui cards">{mapOfPokemon}</div>
     </div>
   );

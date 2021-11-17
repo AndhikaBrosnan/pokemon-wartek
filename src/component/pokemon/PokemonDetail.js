@@ -6,11 +6,6 @@ const PokemonDetail = ({ chosenPokemon }) => {
   console.log("chosen Pokemon: ", chosenPokemon);
   return (
     <div className="ui container" style={{ paddingTop: "4%" }}>
-      <div class="ui grid">
-        <div class="six wide column"></div>
-        <div class="ten wide column"></div>
-      </div>
-
       <Link to="/">
         <img
           alt=""
