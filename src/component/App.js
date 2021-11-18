@@ -1,16 +1,16 @@
 import React from "react";
 import PokemonList from "./pokemon/PokemonList";
-import { Offline, Online } from "react-detect-offline";
+import { Offline } from "react-detect-offline";
 
 const App = () => {
   return (
     <div className="ui container" style={{ paddingTop: "4%" }}>
       <Offline>
-        <h1>Internet is offline</h1>
+        <div className="ui negative message">
+          <div className="header">We're sorry, your internet is offline</div>
+        </div>
       </Offline>
-      <Online>
-        <PokemonList />
-      </Online>
+      <PokemonList />
     </div>
   );
 };
