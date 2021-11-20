@@ -11,14 +11,13 @@ const Pokemon = ({ name }) => {
   };
 
   return (
-    <Link
-      onClick={() => handleClickPokemon(name)}
-      className="ui card"
-      style={{ width: "20%" }}
-      to={`${name}`}
-    >
-      <div className="content">
-        <div className="header">{name}</div>
+    <Link onClick={() => handleClickPokemon(name)} to={`${name}`}>
+      <div className="column">
+        <div className="ui fluid card">
+          <div className="content">
+            <div className="center aligned header">{name}</div>
+          </div>
+        </div>
       </div>
     </Link>
   );
